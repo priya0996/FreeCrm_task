@@ -1,62 +1,103 @@
-package stepdefinition;
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
-public class View_Edit_Delete {
-
-	
-
-@Given("^User navigates to login page$")
-public void user_navigates_to_login_page() throws Throwable {
-    
-}
-
-@When("^User enters valid credentials$")
-public void user_enters_valid_credentials() throws Throwable {
-    }
-
-@When("^User selects task section from sidebar menu$")
-public void user_selects_task_section_from_sidebar_menu() throws Throwable {
-    
-}
-
-@Then("^User should be redirected to task dashboard$")
-public void user_should_be_redirected_to_task_dashboard() throws Throwable {
-    
-}
-
-@When("^User selects the task from dashboard by clicking on view icon$")
-public void user_selects_the_task_from_dashboard_by_clicking_on_view_icon() throws Throwable {
-    
-}
-
-@Then("^Existing task should be visible with all details$")
-public void existing_task_should_be_visible_with_all_details() throws Throwable {
-   
-}
-
-@When("^User selects the task from dashboard by clicking on edit icon$")
-public void user_selects_the_task_from_dashboard_by_clicking_on_edit_icon() throws Throwable {
-   
-}
-
-@Then("^User should be able to edit the task$")
-public void user_should_be_able_to_edit_the_task() throws Throwable {
-    
-}
-
-@When("^User selects the task from dashboard by clicking on delete icon$")
-public void user_selects_the_task_from_dashboard_by_clicking_on_delete_icon() throws Throwable {
-    
-}
-
-@Then("^User should be able to see task in bin$")
-public void user_should_be_able_to_see_task_in_bin() throws Throwable {
-	
-    }
-
-	
-	
-}
+//package stepdefinition;
+//
+//import java.util.concurrent.TimeUnit;
+//
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.support.PageFactory;
+//
+//import POM.CreateTaskPOM2;
+//import POM.LoginPom;
+//import cucumber.api.java.en.Given;
+//import cucumber.api.java.en.Then;
+//import cucumber.api.java.en.When;
+//
+//public class View_Edit_Delete {
+//
+//	WebDriver driver;
+//
+//	@Given("^User navigates to login page of FreeCRM$")
+//	public void user_navigates_to_login_page_of_FreeCRM() throws Throwable {
+//		System.setProperty("webdriver.chrome.driver","C:\\Users\\PASHOKJA\\Desktop\\chromedriver.exe");
+//		this.driver = new ChromeDriver();
+//		driver.get("https://ui.cogmento.com/");
+//		driver.manage().window().maximize();
+//	}
+//
+//	@When("^User enters his/her username and password$")
+//	public void user_enters_his_her_username_and_password() throws Throwable {
+//		LoginPom loginpage=PageFactory.initElements(driver, LoginPom.class);
+//		//Thread.sleep(3000);	
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+//		loginpage.inputemail("priyankajawlkar09@gmail.com");
+//		loginpage.inputpassword("Priya@123");
+//		loginpage.clicklogin();
+//	}
+//	
+//	@Then("^User should login and be on home page of FreeCRM$")
+//	public void user_should_login_and_be_on_home_page_of_FreeCRM() throws Throwable {
+//		CreateTaskPOM2 task=PageFactory.initElements(driver, CreateTaskPOM2.class);
+//		Thread.sleep(3000);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+//		task.clickNavigationbar();
+//		task.taskButton();
+//	    
+//	}
+//
+//	@When("^User select particular task and click on view$")
+//	public void user_select_particular_task_and_click_on_view() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^User should see that task with details$")
+//	public void user_should_see_that_task_with_details() throws Throwable {
+//		
+//	   	}
+//	@When("^user try to add documents in the view$")
+//	public void user_try_to_add_documents_in_the_view() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^application should not add the documents\\.$")
+//	public void application_should_not_add_the_documents() throws Throwable {
+//	   
+//	}
+//
+//
+//	@When("^User select particular task and click on Edit$")
+//	public void user_select_particular_task_and_click_on_Edit() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^User should edit task and click on save$")
+//	public void user_should_edit_task_and_click_on_save() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^User should  be able to see edited task$")
+//	public void user_should_be_able_to_see_edited_task() throws Throwable {
+//	  
+//	}
+//
+//	@When("^User select particular task and click on delete$")
+//	public void user_select_particular_task_and_click_on_delete() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^User should see task in bin$")
+//	public void user_should_see_task_in_bin() throws Throwable {
+//	    
+//	}
+//
+//	@Then("^User select multiple cases and clicks on delete$")
+//	public void user_select_multiple_cases_and_clicks_on_delete() throws Throwable {
+//	   
+//	}
+//
+//	@Then("^User should see cases in bin$")
+//	public void user_should_see_cases_in_bin() throws Throwable {
+//	    
+//	}
+//	*/
+//	
+//}
