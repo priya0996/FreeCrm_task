@@ -12,12 +12,3 @@ Then user click on create button
 Then user fills the data 
 Then user clicks on save button
 
-Scenario: View an existing task
-When User select particular task and click on view
-Then User should see that task with details
-
-@invalid
-Scenario: Adding documents while  viewing an existing task
-When user try to add documents in the view
-Then application should not add the documents.
-

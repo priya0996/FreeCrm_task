@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "check login is successful valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5419754200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "browser is open",
+            "match": {
+              "location": "Newlogin.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7128476200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters username and password",
+            "match": {
+              "location": "Newlogin.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120744300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click\u0027s on login",
+            "match": {
+              "location": "Newlogin.useer_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3542485800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "Newlogin.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2163234100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click on create button",
+            "match": {
+              "location": "Newlogin.user_click_on_create_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11107501300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user fills the data",
+            "match": {
+              "location": "Newlogin.user_fills_the_data()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114101700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "Newlogin.user_clicks_on_save_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Login Functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/main.feature"
+  }
+]
