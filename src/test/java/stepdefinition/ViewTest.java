@@ -1,4 +1,4 @@
-/*package stepdefinition;
+package stepdefinition;
 
 import java.util.concurrent.TimeUnit;
 
@@ -70,15 +70,13 @@ public class ViewTest {
 	}
 
 	@Then("^User should see that task$")
-	public void user_should_see_that_task1() throws Throwable 
-	{
-		WebDriverWait Mywait=new WebDriverWait(driver,10);
-        Mywait.until(ExpectedConditions.elementToBeClickable(By.xpath(" //*[@id=\"dashboard-toolbar\"]/div[1]")));
-        assert driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[1]")).isDisplayed();
-        driver.close();
-	   
-	}
+	public void user_should_see_that_task1() throws Throwable {
+		WebDriverWait Mywait = new WebDriverWait(driver, 10);
+		Mywait.until(ExpectedConditions.elementToBeClickable(By.xpath(" //*[@id=\"dashboard-toolbar\"]/div[1]")));
+		assert driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[1]")).isDisplayed();
+		driver.close();
 
+	}
 
 	@When("^user try to add documents in the view$")
 	public void user_try_to_add_documents_in_the_view() throws Throwable {
@@ -92,10 +90,10 @@ public class ViewTest {
 	@Then("^application should not add the documents\\.$")
 	public void application_should_not_add_the_documents() throws Throwable {
 		CreateTaskPOM2 task = PageFactory.initElements(driver, CreateTaskPOM2.class);
-        
+
 		task.documentsDropHere();
-		 task.getCount();
+		task.getCount();
 
 	}
 
-}*/
+}

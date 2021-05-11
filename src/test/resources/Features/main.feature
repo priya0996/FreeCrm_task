@@ -1,8 +1,6 @@
 Feature: Test Login Functionality
 
-
 Scenario: check login is successful valid credentials
-
 
 Given browser is open
 When user enters username and password

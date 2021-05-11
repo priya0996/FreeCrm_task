@@ -68,15 +68,39 @@ public class Newlogin {
 		CreateTaskPOM2 task = PageFactory.initElements(driver, CreateTaskPOM2.class);
 		task.titleText("Miss Priya");
 		Thread.sleep(2000);
+
 		task.assignedTo();
 		Thread.sleep(2000);
+
+		task.selectDueDate();
+		task.selectDate();
+
+		task.closeDate();
+		task.selectDate1();
+
 		task.decriptionText("Description");
 		Thread.sleep(2000);
+
 		task.identifierText("Identifier");
 		Thread.sleep(2000);
+
 		task.priority();
 		Thread.sleep(2000);
+		task.selectrpriority();
+		Thread.sleep(2000);
 		task.status();
+		Thread.sleep(2000);
+		task.selectStatus();
+		Thread.sleep(2000);
+
+		task.accessButton();
+		Thread.sleep(2000);
+
+		task.clickaccessfield();
+		Thread.sleep(2000);
+
+		task.contactName("Priyanka Jawalkar");
+		Thread.sleep(2000);
 
 	}
 
@@ -84,5 +108,6 @@ public class Newlogin {
 	public void user_clicks_on_save_button() throws Throwable {
 		CreateTaskPOM2 task = PageFactory.initElements(driver, CreateTaskPOM2.class);
 		task.savebutton();
+		driver.close();
 	}
 }

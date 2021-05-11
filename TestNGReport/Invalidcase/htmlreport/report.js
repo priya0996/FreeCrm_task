@@ -1,0 +1,131 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/View_invalid.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Validate View  task functionality",
+  "description": "Description: Testing the view, edit and delete operations from Task dashoard",
+  "id": "validate-view--task-functionality",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "verify login and view task page of FreeCRM",
+  "description": "",
+  "id": "validate-view--task-functionality;verify-login-and-view-task-page-of-freecrm",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 6,
+  "name": "browser is open",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters username and password",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "user click\u0027s on login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user is navigated to the home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user click on view button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user select particular task and click on view",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user should see that task",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ViewTest.browser_is_open()"
+});
+formatter.result({
+  "duration": 5214240800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ViewTest.user_enters_username_and_password()"
+});
+formatter.result({
+  "duration": 5068561500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ViewTest.user_click_s_on_login()"
+});
+formatter.result({
+  "duration": 61877200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ViewTest.user_is_navigated_to_the_home_page()"
+});
+formatter.result({
+  "duration": 3488224000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ViewTest.user_click_on_view_button()"
+});
+formatter.result({
+  "duration": 189381000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ViewTest.user_select_particular_task_and_click_on_view()"
+});
+formatter.result({
+  "duration": 10124212000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"main-content\"]/div/div[2]/div/table/tbody/tr[4]/td[7]/a[1]/button/i\"}\n  (Session info: chrome\u003d90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN59015718\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\PASHOKJA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56294}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9d62e2e23f3ef70a8a946143e766fd80\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"main-content\"]/div/div[2]/div/table/tbody/tr[4]/td[7]/a[1]/button/i}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat POM.CreateTaskPOM2.viewButton(CreateTaskPOM2.java:170)\r\n\tat stepdefinition.ViewTest.user_select_particular_task_and_click_on_view(ViewTest.java:68)\r\n\tat ✽.Then user select particular task and click on view(src/test/resources/Features/View_invalid.feature:11)\r\n",
+  "status": "failed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Adding documents while  viewing an existing task",
+  "description": "",
+  "id": "validate-view--task-functionality;adding-documents-while--viewing-an-existing-task",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 16,
+  "name": "user try to add documents in the view",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "application should not add the documents.",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ViewTest.user_try_to_add_documents_in_the_view()"
+});
+formatter.result({
+  "duration": 3532700,
+  "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat POM.CreateTaskPOM2.documents(CreateTaskPOM2.java:101)\r\n\tat stepdefinition.ViewTest.user_try_to_add_documents_in_the_view(ViewTest.java:87)\r\n\tat ✽.When user try to add documents in the view(src/test/resources/Features/View_invalid.feature:16)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "ViewTest.application_should_not_add_the_documents()"
+});
+formatter.result({
+  "status": "skipped"
+});
+});
